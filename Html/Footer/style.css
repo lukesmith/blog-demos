@@ -1,0 +1,82 @@
+html, body
+{
+    height: 100%;
+    margin: 0px;
+}
+
+#page
+{
+    position: relative;
+    margin: 0px auto;
+    min-height: 100%;
+    height: auto !important;
+}
+
+#header
+{
+    height: 4.5em;
+}
+
+#content
+{
+    height: 100% !important;
+}
+#content :first-child
+{
+    margin-top: 0px;
+    background-color: yellow;
+}
+#content :last-child
+{
+    margin-bottom: 0px;
+    background-color: pink;
+}
+
+#footer
+{
+    position: relative;
+    margin: 0px auto;
+}
+#footer, .push
+{
+    height: 3em;
+    margin-top: -3em;
+}
+.push
+{
+    margin-top: auto !important;
+}
+
+
+/* HACKS */
+#content
+{
+    margin-bottom /*\**/: -1em\9; /* IE8 */
+    *margin-bottom: 0; /* IE7 */
+}
+#footer
+{
+    *bottom: 0px; /* IE7 hack to keep footer fixed to bottom when resizing */
+}
+
+
+
+
+
+
+#page
+{
+    background-color: green;
+}
+#header
+{
+    background-color: #4779C2;
+}
+#content
+{
+    background-color: red;
+}
+#footer
+{
+    background-color: orange;
+}
